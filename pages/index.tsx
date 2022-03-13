@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 				title='Frontendster: Your Web Application in Less Than 8 Weeks'
 				description='Frontendster is a web development service that helps you launch your own web application in less than 8 weeks. And you own the entire thing.'
 				route='/'
-				thumbnailUrl='/preview.png'
+				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.png`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>
