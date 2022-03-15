@@ -21,11 +21,13 @@ export default function Header(props: HeaderInfo) {
 						>
 							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
 								<div className='transform -skew-x-6 flex items-center justify-between w-full md:w-auto'>
-									<a href='#'>
-										<span className='font-normal hover:font-normal font-headline text-4xl text-white'>
-											Frontendster
-										</span>
-									</a>
+									<Link href='/'>
+										<a>
+											<span className='font-normal hover:font-normal font-headline text-4xl text-white'>
+												Frontendster
+											</span>
+										</a>
+									</Link>
 									<div className='-mr-2 flex items-center md:hidden'>
 										<Popover.Button className='transform -skew-x-6 bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-main hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main'>
 											<span className='sr-only'>Open main menu</span>
@@ -49,7 +51,7 @@ export default function Header(props: HeaderInfo) {
 								<span className='inline-flex rounded-md shadow'>
 									<Link href='/how-it-works'>
 										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
-											How it works
+											Customer login
 										</a>
 									</Link>
 								</span>
@@ -97,7 +99,7 @@ export default function Header(props: HeaderInfo) {
 								</div>
 								<Link href='/how-it-works'>
 									<a className='transform -skew-x-6 block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
-										How it works
+										Customer login
 									</a>
 								</Link>
 							</div>

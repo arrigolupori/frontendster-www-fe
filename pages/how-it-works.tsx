@@ -17,9 +17,9 @@ const HowItWorksPage: NextPage = () => {
 			<Container>
 				<Header
 					mainHeading='Your web app in 8 weeks'
-					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web application in less than 8 weeks.'
-					ctaText='See how it works'
-					ctaSlug='/how-it-works'
+					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web app in less than 8 weeks'
+					ctaText='Get a free 45-min consultation'
+					ctaSlug='/free-consultation'
 				/>
 			</Container>
 			<Footer />
