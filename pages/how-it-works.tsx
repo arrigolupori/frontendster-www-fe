@@ -4,7 +4,7 @@ import Container from '@/components/layout/Container'
 import Header from '@/components/nav/Header'
 import Footer from '@/components/nav/Footer'
 
-const Home: NextPage = () => {
+const HowItWorksPage: NextPage = () => {
 	return (
 		<>
 			<SEO
@@ -27,4 +27,4 @@ const Home: NextPage = () => {
 	)
 }
 
-export default Home
+export default HowItWorksPage

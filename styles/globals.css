@@ -17,6 +17,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+  font-family: 'Saira', sans-serif;
 }
 /*
   2. Remove default margin

@@ -5,7 +5,7 @@ import AltHeader from '@/components/nav/AltHeader'
 import Explainer from '@/components/body/Explainer'
 import Footer from '@/components/nav/Footer'
 
-const TermsPage: NextPage = () => {
+const ThanksPage: NextPage = () => {
 	return (
 		<>
 			<SEO
@@ -24,4 +24,4 @@ const TermsPage: NextPage = () => {
 	)
 }
 
-export default TermsPage
+export default ThanksPage

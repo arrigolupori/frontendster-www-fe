@@ -2,9 +2,10 @@ import type { NextPage } from 'next'
 import SEO from '@/components/head/SEO'
 import Container from '@/components/layout/Container'
 import AltHeader from '@/components/nav/AltHeader'
+import Explainer from '@/components/body/Explainer'
 import Footer from '@/components/nav/Footer'
 
-const Home: NextPage = () => {
+const PrivacyPage: NextPage = () => {
 	return (
 		<>
 			<SEO
@@ -16,10 +17,11 @@ const Home: NextPage = () => {
 			/>
 			<Container>
 				<AltHeader />
+				<Explainer explainerHeading='Privacy Policy' explainerCopy='' />
 				<Footer />
 			</Container>
 		</>
 	)
 }
 
-export default Home
+export default PrivacyPage

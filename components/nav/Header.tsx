@@ -108,9 +108,7 @@ export default function Header(props: HeaderInfo) {
 				<main className='mt-16 mx-auto max-w-7xl px-4 sm:mt-24'>
 					<div className='transform -skew-x-6 text-center'>
 						<h1 className='text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl'>
-							<span className='block xl:inline'>
-								{props.mainHeading}
-							</span>
+							<span className='block xl:inline'>{props.mainHeading}</span>
 						</h1>
 						<p className='mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl'>
 							{props.subHeading}
