@@ -31,7 +31,7 @@ const ThanksPage: NextPage = () => {
 							Frontendster to build your web app. Exciting times ahead!
 						</p>
 						<p className='text-center pt-2 pb-8 sm:pb-0 text-base sm:text-xl font-thin'>
-							Here's a quick message from Arrigo:
+							Here&apos;s a quick message from Arrigo:
 						</p>
 					</section>
 					<section className=' px-4 max-w-2xl mx-auto text-center'>
