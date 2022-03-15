@@ -8,16 +8,16 @@ const HowItWorksPage: NextPage = () => {
 	return (
 		<>
 			<SEO
-				title='Frontendster: Your Web Application in Less Than 8 Weeks'
-				description='Frontendster is a web development service that helps you launch your own web application in less than 8 weeks. And you own the entire thing.'
-				route='https://www.frontendster.com'
+				title='How Frontendster Works: 6 Simple Steps'
+				description='Frontendster works based on 6 simple steps: consultation, technical discovery, wireframing, development, testing, and post-MVP support.'
+				route='https://www.frontendster.com/how-it-works'
 				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>
 				<Header
-					mainHeading='Your web app in 8 weeks'
-					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web app in less than 8 weeks'
+					mainHeading='The 6 steps to your web app'
+					subHeading='Building a web app is complex on its own. Why should hiring a developer be the same? Frontendster makes it simple.'
 					ctaText='Get a free 45-min consultation'
 					ctaSlug='/free-consultation'
 				/>

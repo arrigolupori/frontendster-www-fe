@@ -49,7 +49,7 @@ export default function Header(props: HeaderInfo) {
 							</div>
 							<div className='transform -skew-x-6 hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
 								<span className='inline-flex rounded-md shadow'>
-									<Link href='/how-it-works'>
+									<Link href='#'>
 										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
 											Customer login
 										</a>
@@ -97,7 +97,7 @@ export default function Header(props: HeaderInfo) {
 										</a>
 									))}
 								</div>
-								<Link href='/how-it-works'>
+								<Link href='#'>
 									<a className='transform -skew-x-6 block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
 										Customer login
 									</a>
