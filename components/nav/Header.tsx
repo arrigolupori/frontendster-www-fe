@@ -1,10 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Link from 'next/link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-	// { name: '', href: '' }
+	// { name: 'How it works', href: '/' }
 ]
 
 export default function Header() {
@@ -45,12 +46,11 @@ export default function Header() {
 							</div>
 							<div className='hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
 								<span className='inline-flex rounded-md shadow'>
-									<a
-										href='#'
-										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'
-									>
-										Log in
-									</a>
+									<Link href='/how-it-works'>
+										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
+											How it works
+										</a>
+									</Link>
 								</span>
 							</div>
 						</nav>
@@ -94,12 +94,11 @@ export default function Header() {
 										</a>
 									))}
 								</div>
-								<a
-									href='#'
-									className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'
-								>
-									Log in
-								</a>
+								<Link href='/how-it-works'>
+									<a className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
+										How it works
+									</a>
+								</Link>
 							</div>
 						</Popover.Panel>
 					</Transition>
@@ -123,7 +122,7 @@ export default function Header() {
 									href='#'
 									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10'
 								>
-									Get started
+									How it works
 								</a>
 							</div>
 						</div>

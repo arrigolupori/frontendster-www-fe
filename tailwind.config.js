@@ -10,8 +10,7 @@ module.exports = {
 				copy: ['Saira', 'sans-serif'],
 			},
 			colors: {
-				main: '#e68319',
-        darker: '#cf7617'
+				main: '#1ba261',
 			},
 		},
 	},
