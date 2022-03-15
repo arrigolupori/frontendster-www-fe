@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Link from 'next/link'
+import HeaderInfo from '@/models/HeaderInfo'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -8,9 +9,9 @@ const navigation = [
 	// { name: 'How it works', href: '/' }
 ]
 
-export default function Header() {
+export default function Header(props: HeaderInfo) {
 	return (
-		<div className='relative bg-main overflow-hidden font-copy rounded-br-3xl rounded-bl-3xl sm:pb-12 pb-4 '>
+		<div className='relative bg-main overflow-hidden font-copy sm:pb-12 pb-4'>
 			<div className='relative px-6 pt-6 pb-16 sm:pb-24'>
 				<Popover>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6'>
@@ -19,14 +20,14 @@ export default function Header() {
 							aria-label='Global'
 						>
 							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
-								<div className='flex items-center justify-between w-full md:w-auto'>
+								<div className='transform -skew-x-6 flex items-center justify-between w-full md:w-auto'>
 									<a href='#'>
-										<span className='font-headline text-4xl text-white'>
+										<span className='font-normal hover:font-normal font-headline text-4xl text-white'>
 											Frontendster
 										</span>
 									</a>
 									<div className='-mr-2 flex items-center md:hidden'>
-										<Popover.Button className='bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-main hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main'>
+										<Popover.Button className='transform -skew-x-6 bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-main hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main'>
 											<span className='sr-only'>Open main menu</span>
 											<MenuIcon className='h-6 w-6' aria-hidden='true' />
 										</Popover.Button>
@@ -44,7 +45,7 @@ export default function Header() {
 									</a>
 								))}
 							</div>
-							<div className='hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
+							<div className='transform -skew-x-6 hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
 								<span className='inline-flex rounded-md shadow'>
 									<Link href='/how-it-works'>
 										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
@@ -67,10 +68,10 @@ export default function Header() {
 					>
 						<Popover.Panel
 							focus
-							className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
+							className='absolute z-10 top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden'
 						>
 							<div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
-								<div className='px-5 pt-4 flex items-center justify-between'>
+								<div className='transform -skew-x-6 px-8 pt-4 flex items-center justify-between'>
 									<div>
 										<span className='font-headline text-4xl text-main'>
 											Frontendster
@@ -95,7 +96,7 @@ export default function Header() {
 									))}
 								</div>
 								<Link href='/how-it-works'>
-									<a className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
+									<a className='transform -skew-x-6 block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
 										How it works
 									</a>
 								</Link>
@@ -105,24 +106,22 @@ export default function Header() {
 				</Popover>
 
 				<main className='mt-16 mx-auto max-w-7xl px-4 sm:mt-24'>
-					<div className='text-center'>
+					<div className='transform -skew-x-6 text-center'>
 						<h1 className='text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl'>
 							<span className='block xl:inline'>
-								Data to enrich your online business
+								{props.mainHeading}
 							</span>
 						</h1>
-						<p className='mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
-							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-							lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-							fugiat aliqua.
+						<p className='mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-2xl md:max-w-3xl'>
+							{props.subHeading}
 						</p>
 						<div className='mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8'>
 							<div className='rounded-md shadow'>
 								<a
-									href='#'
+									href={props.ctaSlug}
 									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10'
 								>
-									How it works
+									{props.ctaText}
 								</a>
 							</div>
 						</div>

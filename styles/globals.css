@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--main-color: #3aa25e;
+	--link-hover-color: #349255;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -73,4 +78,15 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
+}
+/*
+  Custom styles
+*/
+a {
+	color: var(--main-color);
+	font-weight: 700;
+}
+
+a:hover {
+	color: var(--link-hover-color);
 }

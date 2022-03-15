@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import SEO from '@/components/head/SEO'
 import Container from '@/components/layout/Container'
 import Header from '@/components/nav/Header'
+import Footer from '@/components/nav/Footer'
 
 const Home: NextPage = () => {
 	return (
@@ -14,7 +15,13 @@ const Home: NextPage = () => {
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>
-				<Header />
+				<Header
+					mainHeading='Your web app in 8 weeks'
+					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web app in less than 8 weeks.'
+					ctaText='See how it works'
+					ctaSlug='/how-it-works'
+				/>
+				<Footer />
 			</Container>
 		</>
 	)

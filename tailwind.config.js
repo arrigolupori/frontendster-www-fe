@@ -10,9 +10,11 @@ module.exports = {
 				copy: ['Saira', 'sans-serif'],
 			},
 			colors: {
-				main: '#1ba261',
+				main: '#3aa25e',
+				background: '#c4e3cf',
+				copy: '#061009',
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }
