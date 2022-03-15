@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Script from 'next/script'
 import SEO from '@/components/head/SEO'
 import Container from '@/components/layout/Container'
 import AltHeader from '@/components/nav/AltHeader'
@@ -27,7 +28,7 @@ const ConsultationPage: NextPage = () => {
 						</p>
 					</section>
 					<section className='-mt-16'>
-						<script src='https://static.airtable.com/js/embed/embed_snippet_v1.js'></script>
+						<Script src='https://static.airtable.com/js/embed/embed_snippet_v1.js' strategy='beforeInteractive' />
 						<iframe
 							className='z-0 airtable-embed airtable-dynamic-height'
 							src='https://airtable.com/embed/shrw5zdLHSMonhxu1?backgroundColor=cyan'
