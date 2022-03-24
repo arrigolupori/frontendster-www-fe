@@ -37,10 +37,11 @@ const TermsPage: NextPage = () => {
 						through a process of discovery and contracting.
 					</p>
 					<p className='pt-2 leading-6'>
-						Frontendster.com (the "Site") is only meant to be used as a form of
-						request for consultation and project discovery. It is also a place
-						where you can browse useful content on how to design, develop, and
-						launch a web application for your own startup—free of charge.
+						Frontendster.com (the &ldquo;Site&ldquo;) is only meant to be used
+						as a form of request for consultation and project discovery. It is
+						also a place where you can browse useful content on how to design,
+						develop, and launch a web application for your own startup—free of
+						charge.
 					</p>
 					<h2 className='pt-4'>Consultation requests</h2>
 					<p className='leading-6'>
@@ -67,8 +68,8 @@ const TermsPage: NextPage = () => {
 						<li>
 							You may not ask for work based on commission (i.e. a % of future
 							profits or revenues), future partnerships, cryptocurrencies, or
-							any form of payment that isn't USD. We only offer services in USD
-							and will never accept payments in other forms or currencies.
+							any form of payment that isn&apos;t USD. We only offer services in
+							USD and will never accept payments in other forms or currencies.
 						</li>
 						<li>
 							Each web application is developed based on custom contracts. The
@@ -83,9 +84,9 @@ const TermsPage: NextPage = () => {
 						any change to our services that will affect them.{' '}
 					</p>
 					<p className='pt-2 leading-6'>
-						If you're a recurring visitor, we invite you to check back regularly
-						to understand the latest changes to our Terms of Service. We reserve
-						full rights to change the terms at any time.
+						If you&apos;re a recurring visitor, we invite you to check back
+						regularly to understand the latest changes to our Terms of Service.
+						We reserve full rights to change the terms at any time.
 					</p>
 				</Explainer>
 				<Footer />

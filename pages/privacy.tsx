@@ -51,10 +51,10 @@ const PrivacyPage: NextPage = () => {
 					<p className='leading-6'>
 						No, and we will never do it. Your data is extremely important to us.
 						When you provide information based on your business needs, we
-						implement a "walled garden" policy; your data is never shared
-						outside of our internal servers. If we need to move your data to a
-						third-party service to improve some of our capabilities, we will
-						inform you. But we will never sell your data for profit.
+						implement a &ldquo;walled garden&ldquo; policy; your data is never
+						shared outside of our internal servers. If we need to move your data
+						to a third-party service to improve some of our capabilities, we
+						will inform you. But we will never sell your data for profit.
 					</p>
 				</Explainer>
 				<Footer />
