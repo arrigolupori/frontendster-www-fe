@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Footer() {
 	return (
-		<nav className='mt-6 pb-8 transform -skew-x-6 text-center'>
+		<nav className='mt-6 pb-8 text-center'>
 			<SingleLogo />
-			<p className='mt-2 text-sm'>
+			<p className='mt-2 text-sm italic'>
 				<span>
 					<Link href='/terms'>
 						<a>Terms</a>

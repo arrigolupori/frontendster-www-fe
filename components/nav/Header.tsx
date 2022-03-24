@@ -20,7 +20,7 @@ export default function Header(props: HeaderInfo) {
 							aria-label='Global'
 						>
 							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
-								<div className='transform -skew-x-6 flex items-center justify-between w-full md:w-auto'>
+								<div className='flex items-center justify-between w-full md:w-auto'>
 									<Link href='/'>
 										<a>
 											<span className='font-normal hover:font-normal font-headline text-4xl text-white'>
@@ -29,7 +29,7 @@ export default function Header(props: HeaderInfo) {
 										</a>
 									</Link>
 									<div className='-mr-2 flex items-center md:hidden'>
-										<Popover.Button className='transform -skew-x-6 bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-main hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main'>
+										<Popover.Button className='bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-main hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-main'>
 											<span className='sr-only'>Open main menu</span>
 											<MenuIcon className='h-6 w-6' aria-hidden='true' />
 										</Popover.Button>
@@ -47,13 +47,16 @@ export default function Header(props: HeaderInfo) {
 									</a>
 								))}
 							</div>
-							<div className='transform -skew-x-6 hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
+							<div className='hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
 								<span className='inline-flex rounded-md shadow'>
-									<Link href='#'>
-										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
-											Customer login
-										</a>
-									</Link>
+									<a
+										href='https://app.frontendster.com'
+										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Customer login
+									</a>
 								</span>
 							</div>
 						</nav>
@@ -73,7 +76,7 @@ export default function Header(props: HeaderInfo) {
 							className='absolute z-10 top-0 inset-x-0 p-4 transition transform origin-top-right md:hidden'
 						>
 							<div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
-								<div className='transform -skew-x-6 px-8 pt-4 flex items-center justify-between'>
+								<div className='px-8 pt-4 flex items-center justify-between'>
 									<div>
 										<span className='font-headline text-4xl text-main'>
 											Frontendster
@@ -97,18 +100,21 @@ export default function Header(props: HeaderInfo) {
 										</a>
 									))}
 								</div>
-								<Link href='#'>
-									<a className='transform -skew-x-6 block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
-										Customer login
-									</a>
-								</Link>
+								<a
+									href='https://app.frontendster.com'
+									className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'
+									target='_blank'
+									rel='noreferrer'
+								>
+									Customer login
+								</a>
 							</div>
 						</Popover.Panel>
 					</Transition>
 				</Popover>
 
 				<main className='mt-16 mx-auto max-w-7xl px-4 sm:mt-24'>
-					<div className='transform -skew-x-6 text-center'>
+					<div className='text-center'>
 						<h1 className='text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl'>
 							<span className='block xl:inline'>{props.mainHeading}</span>
 						</h1>
