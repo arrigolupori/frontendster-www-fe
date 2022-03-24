@@ -7,7 +7,10 @@
 
 :root {
 	--main-color: #3aa25e;
+	--background-color: #c4e3cf;
+	--lighter-background-color: #c4e3cfce;
 	--link-hover-color: #349255;
+	--copy-color: #061009;
 }
 
 /*
@@ -43,10 +46,15 @@ h2 {
 
 ul {
 	list-style-type: disc;
-	padding: 0.75em 0 0.75em 3em;
+	padding: 0.75em 0 0.75em 2em;
 }
 
 li {
 	font-size: 1rem;
 	line-height: 1.5rem;
+}
+
+mark {
+	background-color: var(--lighter-background-color);
+	color: var(--copy-color);
 }

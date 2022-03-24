@@ -1,6 +1,8 @@
-import ExplainerInfo from '@/models/ExplainerInfo'
-
-export default function Explainer({ explainerHeading, children }) {
+export default function Explainer({
+	explainerHeading,
+	background = true,
+	children,
+}) {
 	return (
 		<article className='mt-8 relative bg-white overflow-hidden'>
 			<div className='relative px-4 sm:px-6 lg:px-8'>
@@ -10,9 +12,15 @@ export default function Explainer({ explainerHeading, children }) {
 							{explainerHeading}
 						</span>
 					</h2>
-					<p className='rounded-md bg-background mt-8 text-xl text-copy leading-8 p-8'>
+					<div
+						className={
+							background
+								? 'text-left rounded-md bg-background mt-8 text-xl text-copy leading-6 p-8'
+								: 'text-left rounded-md mt-8 text-xl text-copy leading-6 p-8'
+						}
+					>
 						{children}
-					</p>
+					</div>
 				</section>
 			</div>
 		</article>

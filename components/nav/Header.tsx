@@ -11,7 +11,7 @@ const navigation = [
 
 export default function Header(props: HeaderInfo) {
 	return (
-		<div className='relative bg-main overflow-hidden font-copy sm:pb-12 pb-4'>
+		<div className='relative bg-main overflow-hidden font-copy sm:pb-12 pb-4 z-0'>
 			<div className='relative px-6 pt-6 pb-16 sm:pb-24'>
 				<Popover>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6'>

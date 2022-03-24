@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { Video, CloudinaryContext } from 'cloudinary-react'
 import Explainer from '@/components/body/Explainer'
 import SEO from '@/components/head/SEO'
@@ -10,12 +10,6 @@ import Footer from '@/components/nav/Footer'
 
 const ThanksPage: NextPage = () => {
 	const videoRef = useRef()
-	let confettiTrigger = false
-	// useEffect(() => {
-	// 	window.addEventListener('load', function () {
-	// 		confettiTrigger = true
-	// 	})
-	// })
 	return (
 		<>
 			<SEO
@@ -40,7 +34,7 @@ const ThanksPage: NextPage = () => {
 							Here&apos;s a quick message from Arrigo:
 						</p>
 					</section>
-					<section className=' px-4 max-w-2xl mx-auto text-center'>
+					<section className='px-4 max-w-2xl mx-auto text-center'>
 						<CloudinaryContext cloud_name='arrigolupori'>
 							<div className='mt-8 border-8 border-main rounded-md'>
 								<Video
