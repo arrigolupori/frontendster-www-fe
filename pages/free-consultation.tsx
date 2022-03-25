@@ -18,7 +18,7 @@ const ConsultationPage: NextPage = () => {
 			<Container>
 				<AltHeader />
 				<article className='max-w-2xl mx-auto px-4'>
-					<section className='transform -skew-x-6 px-4'>
+					<section className='transform px-4'>
 						<h1 className='z-10 pt-8 text-xl sm:text-3xl text-center text-main font-semibold'>
 							Your free 45-minute consultation
 						</h1>

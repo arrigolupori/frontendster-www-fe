@@ -8,86 +8,10 @@ import Explainer from '@/components/body/Explainer'
 import ThreeCards from '@/components/body/ThreeCards'
 import TwoCards from '@/components/body/TwoCards'
 import BottomCTA from '@/components/body/BottomCTA'
+import Author from '@/components/body/Author'
 import Footer from '@/components/nav/Footer'
-
-import {
-	ClockIcon,
-	OfficeBuildingIcon,
-	DesktopComputerIcon,
-	CreditCardIcon,
-	CloudDownloadIcon,
-	ThumbUpIcon,
-	GlobeIcon,
-	CloudIcon,
-	UserIcon,
-	ChartBarIcon,
-} from '@heroicons/react/outline'
-
-const benefits = [
-	{
-		name: 'Ready in < 8 weeks',
-		description:
-			'Frontendster strives to deliver your Minimum Viable Product within 8 weeks from project start.',
-		icon: ClockIcon,
-	},
-	{
-		name: 'Made for small firms',
-		description:
-			'The service is catered specifically to the needs of small service firms or entrepreneurs.',
-		icon: OfficeBuildingIcon,
-	},
-	{
-		name: 'No hassle hiring devs',
-		description:
-			'Get all you need in one place. No jumping around from one platform to another.',
-		icon: DesktopComputerIcon,
-	},
-	{
-		name: 'Know the cost upfront',
-		description:
-			'Get a detailed quote of all the costs right after your first consultation. Zero hidden fees.',
-		icon: CreditCardIcon,
-	},
-	{
-		name: 'Own the entire app',
-		description:
-			'Hire Frontendster with the comfort of knowing that all infrastructure will be owned by you.',
-		icon: CloudDownloadIcon,
-	},
-	{
-		name: 'Designed to be low risk',
-		description:
-			'Deferred payments and bi-weekly delivery make Frontendster a low-risk, high-value investment.',
-		icon: ThumbUpIcon,
-	},
-]
-
-const samples = [
-	{
-		name: 'Technology platform',
-		description:
-			'Want to connect one audience to the other? Building a technology platform makes it eays for them to communicate.',
-		icon: UserIcon,
-	},
-	{
-		name: 'SaaS app or customer portal',
-		description:
-			'Kickstart your own recurring revenue business or offer customers a modernized experience with a private portal.',
-		icon: CloudIcon,
-	},
-	{
-		name: 'Internal management tool',
-		description:
-			'Tired of switching between hundreds of tools to get one thing done? Frontendster helps you build (and own) your use case.',
-		icon: ChartBarIcon,
-	},
-	{
-		name: 'Modern website',
-		description:
-			'Personalized website experiences are becoming the norm. But they require a lot of dev expertise. Frontendster can help.',
-		icon: GlobeIcon,
-	},
-]
+import { benefits } from '@/data/benefits'
+import { samples } from '@/data/samples'
 
 const Home: NextPage = () => {
 	const videoRef = useRef()
@@ -104,10 +28,10 @@ const Home: NextPage = () => {
 				<Header
 					mainHeading='Your web app in 8 weeks'
 					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web app in less than 8 weeks.'
-					ctaText='See how it works'
-					ctaSlug='/how-it-works'
+					ctaText='Get a free 45-min consultation'
+					ctaSlug='/free-consultation'
 				/>
-				<section className=' -top-12 -mb-20 px-10 max-w-2xl mx-auto text-center relative sm:-top-20 sm:px-4'>
+				{/* <section className=' -top-12 -mb-20 px-10 max-w-2xl mx-auto text-center relative sm:-top-20 sm:px-4'>
 					<CloudinaryContext cloud_name='arrigolupori'>
 						<div className='border-8 border-white rounded-md shadow-md'>
 							<Video
@@ -120,7 +44,7 @@ const Home: NextPage = () => {
 							/>
 						</div>
 					</CloudinaryContext>
-				</section>
+				</section> */}
 				<section className='px-6 mx-auto sm:max-w-xl sm:px-0'>
 					<Explainer explainerHeading=''>
 						<h2 className='mb-2'>Hiring a developer is a chore...</h2>
@@ -207,8 +131,8 @@ const Home: NextPage = () => {
 					<Explainer explainerHeading='' background={false}>
 						<p className='-mt-10 mb-2 sm:text-lg'>
 							Each application is built starting from your specific
-							requirements, and with your end-users&apos; needs in mind. <mark>They
-							are not templated nor duplicated.</mark>
+							requirements, and with your end-users&apos; needs in mind.{' '}
+							<mark>They are not templated nor duplicated.</mark>
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							To make our (and your) life easier, we use open-source managed
@@ -217,13 +141,16 @@ const Home: NextPage = () => {
 						</p>
 					</Explainer>
 				</section>
-				<section>
+				<section className='px-12'>
 					<BottomCTA
 						mainHeading='Learn the 6 steps to your web app'
-						subHeading='Frontendster has developed a proven system to deliver high-quality web apps while reducing the risk of traditional development.'
-						ctaText='See how it works'
-						ctaSlug='/how-it-works'
+						subHeading='Book a friendly live chat with Arrigo and see if the 6-step Frontendster process is right for your business. Zero commitments.'
+						ctaText='Get a free 45-min consultation'
+						ctaSlug='/free-consultation'
 					/>
+				</section>
+				<section>
+					<Author />
 				</section>
 				<Footer />
 			</Container>

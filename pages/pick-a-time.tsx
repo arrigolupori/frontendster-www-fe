@@ -18,7 +18,7 @@ const TimePage: NextPage = () => {
 			<Container>
 				<AltHeader />
 				<article className='px-4'>
-					<section className='transform -skew-x-6 px-4 max-w-2xl mx-auto'>
+					<section className='transform px-4 max-w-2xl mx-auto'>
 						<h1 className='z-10 pt-8 text-xl sm:text-3xl text-center text-main font-semibold'>
 							Pick a time that suits you below
 						</h1>
