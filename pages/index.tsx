@@ -5,7 +5,9 @@ import Header from '@/components/nav/Header'
 import { useRef } from 'react'
 import { Video, CloudinaryContext } from 'cloudinary-react'
 import Explainer from '@/components/body/Explainer'
-import Benefits from '@/components/body/Benefits'
+import ThreeCards from '@/components/body/ThreeCards'
+import TwoCards from '@/components/body/TwoCards'
+import BottomCTA from '@/components/body/BottomCTA'
 import Footer from '@/components/nav/Footer'
 
 import {
@@ -15,9 +17,13 @@ import {
 	CreditCardIcon,
 	CloudDownloadIcon,
 	ThumbUpIcon,
+	GlobeIcon,
+	CloudIcon,
+	UserIcon,
+	ChartBarIcon,
 } from '@heroicons/react/outline'
 
-const benefitsOne = [
+const benefits = [
 	{
 		name: 'Ready in < 8 weeks',
 		description:
@@ -36,9 +42,6 @@ const benefitsOne = [
 			'Get all you need in one place. No jumping around from one platform to another.',
 		icon: DesktopComputerIcon,
 	},
-]
-
-const benefitsTwo = [
 	{
 		name: 'Know the cost upfront',
 		description:
@@ -56,6 +59,33 @@ const benefitsTwo = [
 		description:
 			'Deferred payments and bi-weekly delivery make Frontendster a low-risk, high-value investment.',
 		icon: ThumbUpIcon,
+	},
+]
+
+const samples = [
+	{
+		name: 'Technology platform',
+		description:
+			'Want to connect one audience to the other? Building a technology platform makes it eays for them to communicate.',
+		icon: UserIcon,
+	},
+	{
+		name: 'SaaS app or customer portal',
+		description:
+			'Kickstart your own recurring revenue business or offer customers a modernized experience with a private portal.',
+		icon: CloudIcon,
+	},
+	{
+		name: 'Internal management tool',
+		description:
+			'Tired of switching between hundreds of tools to get one thing done? Frontendster helps you build (and own) your use case.',
+		icon: ChartBarIcon,
+	},
+	{
+		name: 'Modern website',
+		description:
+			'Personalized website experiences are becoming the norm. But they require a lot of dev expertise. Frontendster can help.',
+		icon: GlobeIcon,
 	},
 ]
 
@@ -79,7 +109,7 @@ const Home: NextPage = () => {
 				/>
 				<section className=' -top-12 -mb-20 px-10 max-w-2xl mx-auto text-center relative sm:-top-20 sm:px-4'>
 					<CloudinaryContext cloud_name='arrigolupori'>
-						<div className='border-8 border-white rounded-md'>
+						<div className='border-8 border-white rounded-md shadow-md'>
 							<Video
 								publicId='https://res.cloudinary.com/arrigolupori/video/upload/v1648122864/Frontendster_-_Thank_you_bh3pix.mp4'
 								width='100%'
@@ -91,7 +121,7 @@ const Home: NextPage = () => {
 						</div>
 					</CloudinaryContext>
 				</section>
-				<section className='mx-auto sm:max-w-xl'>
+				<section className='px-6 mx-auto sm:max-w-xl sm:px-0'>
 					<Explainer explainerHeading=''>
 						<h2 className='mb-2'>Hiring a developer is a chore...</h2>
 						<p className='mb-2 sm:text-lg'>
@@ -150,33 +180,50 @@ const Home: NextPage = () => {
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							That way, you not only control the end-user experience, but you
-							also own 100% of your application!{' '}
+							also own 100&percnt; of your application!{' '}
 							<mark>No middlemen required.</mark>
 						</p>
 					</Explainer>
 				</section>
-				<Benefits benefits={benefitsOne} />
-				<Benefits benefits={benefitsTwo} />
+				<section className='px-12'>
+					<ThreeCards data={benefits} />
+				</section>
 				<section className='pt-8 mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='What is Frontendster?'
+						explainerHeading='Ok, but what can you build with Frontendster?'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
-						</p>
-						<p className='mb-2 sm:text-lg'>
-							The service focuses on achieving a beautiful, functional UI
-							powered by open-source managed backends such as Strapi and
-							Supabase.
-						</p>
-						<p className='mb-2 sm:text-lg'>
-							That way, you not only control the end-user experience, but you
-							also own 100% of your application! No middlemen required.
+							Great question! Since Frontendster focuses on{' '}
+							<mark>delivering great end-user experiences</mark>, you can build
+							anything that is meant to augment your brand:
 						</p>
 					</Explainer>
+				</section>
+				<section className='px-12'>
+					<TwoCards data={samples} />
+				</section>
+				<section className='py-8 mx-auto sm:max-w-xl'>
+					<Explainer explainerHeading='' background={false}>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Each application is built starting from your specific
+							requirements, and with your end-users&apos; needs in mind. <mark>They
+							are not templated nor duplicated.</mark>
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							To make our (and your) life easier, we use open-source managed
+							backend services that allow us to focus exclusively on achieving a{' '}
+							great UI.
+						</p>
+					</Explainer>
+				</section>
+				<section>
+					<BottomCTA
+						mainHeading='Learn the 6 steps to your web app'
+						subHeading='Frontendster has developed a proven system to deliver high-quality web apps while reducing the risk of traditional development.'
+						ctaText='See how it works'
+						ctaSlug='/how-it-works'
+					/>
 				</section>
 				<Footer />
 			</Container>

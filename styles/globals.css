@@ -7,8 +7,7 @@
 
 :root {
 	--main-color: #3aa25e;
-	--background-color: #c4e3cf;
-	--lighter-background-color: #c4e3cfce;
+	--background-color: #d8ecdf;
 	--link-hover-color: #349255;
 	--copy-color: #061009;
 }
@@ -55,6 +54,6 @@ li {
 }
 
 mark {
-	background-color: var(--lighter-background-color);
+	background-color: var(--background-color);
 	color: var(--copy-color);
 }
