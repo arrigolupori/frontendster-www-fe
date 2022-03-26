@@ -4,7 +4,7 @@ import HeaderInfo from '@/models/HeaderInfo'
 export default function BottomCTA(props: HeaderInfo) {
 	return (
 		<div className='px-0 bg-main mb-10 sm:max-w-6xl mx-auto lg:rounded-md'>
-			<div className='max-w-4xl mx-auto text-center py-16 px-14 sm:py-20'>
+			<div className='max-w-4xl mx-auto text-center py-16 px-10 sm:py-20'>
 				<h2 className='text-3xl font-extrabold text-white sm:text-5xl'>
 					<span className='block'>{props.mainHeading}</span>
 				</h2>

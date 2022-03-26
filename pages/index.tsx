@@ -47,10 +47,10 @@ const Home: NextPage = () => {
 				</section> */}
 				<section className='px-6 mx-auto sm:max-w-xl sm:px-0'>
 					<Explainer explainerHeading=''>
-						<h2 className='mb-2'>Hiring a developer is a chore...</h2>
+						<h2 className='mb-2'>Hiring a developer can be a major chore...</h2>
 						<p className='mb-2 sm:text-lg'>
 							You want to modernize your business. And you <em>know</em> it
-							takes a proper web application to do so.
+							takes a proper web app to do so.
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							But hiring a developer presents a ton of challenges which are hard
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
 						</ul>
 						<p className='mb-2 sm:text-lg'>
 							If this all sounds like the typical experience of hiring a
-							developer to you, Frontendster is here to help.
+							developer to you, Frontendster can help.
 						</p>
 					</Explainer>
 				</section>
