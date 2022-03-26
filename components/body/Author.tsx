@@ -8,7 +8,7 @@ export default function Author() {
 						Why use Frontendster?
 					</h3>
 					<blockquote className='mt-4'>
-						<div className='px-10 max-w-3xl mx-auto text-center leading-8 text-gray-900'>
+						<div className='px-10 max-w-3xl mx-auto text-center text-gray-900'>
 							<p className='italic text-lg leading-7 text-left sm:text-base sm:text-center'>
 								&ldquo;As a small business owner, I&apos;ve seen endless
 								examples of companies spending huge amounts of budget on
