@@ -104,7 +104,7 @@ const Home: NextPage = () => {
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							That way, you not only control the end-user experience, but you
-							also own 100&percnt; of your application!{' '}
+							also own 100% of your application!{' '}
 							<mark>No middlemen required.</mark>
 						</p>
 					</Explainer>
