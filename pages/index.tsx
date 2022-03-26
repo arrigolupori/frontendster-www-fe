@@ -135,9 +135,9 @@ const Home: NextPage = () => {
 							<mark>They are not templated nor duplicated</mark>.
 						</p>
 						<p className='mb-2 sm:text-lg'>
-							To make our (and your) life easier, we use open-source managed
-							backend services that allow us to focus exclusively on achieving a{' '}
-							great UI.
+							By using managed backends, Frontendster can focus exclusively on
+							delivering a great interface in a fraction of the development
+							time.
 						</p>
 					</Explainer>
 				</section>
