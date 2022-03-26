@@ -9,12 +9,15 @@ export default function Author() {
 					</h3>
 					<blockquote className='mt-4'>
 						<div className='px-12 max-w-3xl mx-auto text-center leading-8 text-gray-900'>
-							<p className='text-lg leading-8 text-left sm:text-base sm:text-center'>
-								As a small business owner, I&apos;ve seen endless examples of
-								companies spending huge amounts of budget on third-party
-								software that didn&apos;t fit their purpose. With Frontendster,
-								you get to build and retain all the value for yourself. No
-								middlemen, no budget leak.
+							<p className='italic text-lg leading-7 text-left sm:text-base sm:text-center'>
+								&ldquo;As a small business owner, I&apos;ve seen endless
+								examples of companies spending huge amounts of budget on
+								third-party software that didn&apos;t fit their purpose. With
+								Frontendster,{' '}
+								<mark>
+									you get to build and retain all the value for yourself
+								</mark>
+								. No middlemen, no budget leak.&rdquo;
 							</p>
 						</div>
 						<div className='mt-8'>

@@ -132,7 +132,7 @@ const Home: NextPage = () => {
 						<p className='-mt-10 mb-2 sm:text-lg'>
 							Each application is built starting from your specific
 							requirements, and with your end-users&apos; needs in mind.{' '}
-							<mark>They are not templated nor duplicated.</mark>
+							<mark>They are not templated nor duplicated</mark>.
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							To make our (and your) life easier, we use open-source managed
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
 						</p>
 					</Explainer>
 				</section>
-				<section className='px-12'>
+				<section className='lg:px-4'>
 					<BottomCTA
 						mainHeading='Learn the 6 steps to your web app'
 						subHeading='Book a friendly live chat with Arrigo and see if the 6-step Frontendster process is right for your business. Zero commitments.'
