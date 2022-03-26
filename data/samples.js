@@ -9,7 +9,7 @@ export const samples = [
 	{
 		name: 'Technology platform',
 		description:
-			'Want to connect one audience to the other? Building a technology platform makes it eays for them to communicate.',
+			'Want to connect one audience to the other? Building a technology platform makes it easy for them to communicate.',
 		icon: UserIcon,
 	},
 	{
