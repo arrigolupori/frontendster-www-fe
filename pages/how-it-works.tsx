@@ -11,6 +11,8 @@ import Footer from '@/components/nav/Footer'
 import { faqs } from '@/data/faqs'
 import { topics } from '@/data/topics'
 import { sections } from '@/data/sections'
+import { uxcards } from '@/data/uxcards'
+import { devcards } from '@/data/devcards'
 
 const HowItWorksPage: NextPage = () => {
 	return (
@@ -45,35 +47,38 @@ const HowItWorksPage: NextPage = () => {
 							delivering a great product.
 						</p>
 						<p className='mb-2 sm:text-lg'>
-							Here are the <strong>6 steps to your web app</strong>:
+							Here are the 6 steps to your web app:
 						</p>
 						<ol className='sm:text-lg'>
 							<li className='sm:text-lg'>
-								Start with a <strong>free consultation</strong>
+								Start with a <a href='#consultation'>free consultation</a>
 							</li>
 							<li className='sm:text-lg'>
-								<strong>Get a quote</strong> and full project breakdown
+								<a href='#quote'>Get a quote</a> and full project breakdown
 							</li>
 							<li className='sm:text-lg'>
-								<strong>Visualize your app</strong> with a wireframe and mockup
+								<a href='#wireframing'>Visualize your app</a> with a wireframe
+								and mockup
 							</li>
 							<li className='sm:text-lg'>
-								Approved? The <strong>3 cycles of development</strong> start!
+								Approved? The <a href='#development'>3 cycles of development</a>{' '}
+								start!
 							</li>
 							<li className='sm:text-lg'>
-								The <strong>app is thoroughly tested</strong> before launch
+								The <a href='#testing'>app is thoroughly tested</a> before
+								launch
 							</li>
 							<li className='sm:text-lg'>
-								<strong>Launch the application</strong> and get support
+								<a href='#launch'>Launch the application</a> and get support
 							</li>
 						</ol>
-						<p className='mb-2 sm:text-lg'>
+						<p className='mb-0 sm:text-lg'>
 							Let&apos;s look at each of the steps in detail to better
 							understand the value of Frontendster.
 						</p>
 					</Explainer>
 				</section>
-				<section className='pt-8 mx-auto sm:max-w-xl'>
+				<section id='consultation' className='pt-8 mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='1. Your free consultation'
 						background={false}
@@ -106,7 +111,7 @@ const HowItWorksPage: NextPage = () => {
 						</p>
 					</Explainer>
 				</section>
-				<section className='mx-auto sm:max-w-xl'>
+				<section id='quote' className='mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='2. Full project breakdown'
 						background={false}
@@ -140,38 +145,82 @@ const HowItWorksPage: NextPage = () => {
 						</p>
 					</Explainer>
 				</section>
-				<section className='mx-auto sm:max-w-xl'>
+				<section id='wireframing' className='mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='3. Wireframes &amp; mockups'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+						<p className='-mt-10 mb-0 sm:text-lg'>
+							Step 3 is where the project officially starts. There are two
+							components required before development:
+						</p>
 					</Explainer>
 				</section>
+				<section className='px-12'>
+					<TwoCards data={uxcards} />
+				</section>
 
-				<section className='pt-8 mx-auto sm:max-w-xl'>
+				<section className='mx-auto sm:max-w-xl'>
+					<Explainer explainerHeading='' background={false}>
+						<p className='-mt-4 mb-2 sm:text-lg'>
+							Frontendster first goes through the jobs to be done and creates a{' '}
+							<mark>wireframe of your app</mark> against them.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Once approved, the app is then brought to life with all individual
+							design elements through a mockup.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Depending on the size of your app, these will cost between $1,000
+							to $2,000 to produce (combined).
+						</p>
+					</Explainer>
+				</section>
+				<section id='development' className='mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='4. Developing your app'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>Step 4...</p>
 					</Explainer>
 				</section>
-				<section className='pt-8 mx-auto sm:max-w-xl'>
+
+				<section className='px-12'>
+					<TwoCards data={devcards} />
+				</section>
+
+				<section className='mx-auto sm:max-w-xl'>
+					<Explainer explainerHeading='' background={false}>
+						<p className='-mt-4 mb-2 sm:text-lg'>
+							Frontendster first goes through the jobs to be done and creates a{' '}
+							<mark>wireframe of your app</mark> against them.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Once approved, the app is then brought to life with all individual
+							design elements through a mockup.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Depending on the size of your app, these will cost between $1,000
+							to $2,000 to produce (combined).
+						</p>
+					</Explainer>
+				</section>
+
+				<section id='testing' className='mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='5. Final revisions &amp; testing'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>Step 5...</p>
 					</Explainer>
 				</section>
 
-				<section className='pt-8 mx-auto sm:max-w-xl'>
+				<section id='launch' className='mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='6. Launching your MVP'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>Step 6...</p>
 					</Explainer>
 				</section>
 				<section className='py-8 mx-auto sm:max-w-xl'>

@@ -81,7 +81,7 @@ const Home: NextPage = () => {
 								minimized by setting the right expectations.
 							</li>
 						</ul>
-						<p className='mb-2 sm:text-lg'>
+						<p className='mb-0 sm:text-lg'>
 							If this all sounds like the typical experience of hiring a
 							developer to you, Frontendster can help.
 						</p>

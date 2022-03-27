@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<nav className='mt-6 pb-8 text-center'>
 			<SingleLogo />
-			<p className='mt-2 text-sm italic'>
+			<p className='mt-2 text-sm'>
 				<span>
 					<Link href='/terms'>
 						<a>Terms</a>

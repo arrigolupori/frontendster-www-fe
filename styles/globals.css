@@ -12,6 +12,10 @@
 	--copy-color: #061009;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -45,12 +49,12 @@ h2 {
 
 ul {
 	list-style-type: disc;
-	padding: 0.75em 0 0.75em 1.5em;
+	padding: 0.75em 0 1em 1.5em;
 }
 
 ol {
 	list-style-type: decimal;
-	padding: 0.75em 0 0.75em 1.5em;
+	padding: 0.75em 0 1em 1.5em;
 }
 
 li {

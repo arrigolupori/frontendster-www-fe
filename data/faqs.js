@@ -7,7 +7,7 @@ export const faqs = [
 	{
 		question: 'Can I build a large application with Frontendster?',
 		answer:
-			"Over time, yes. But the first 8 weeks will be dedicated to delivering an MVP, or Minimum Viable Product. It's important that you base your expectations around this concept (described below).",
+			"Over time, yes. But the first 8 weeks will be dedicated to delivering an MVP, or Minimum Viable Product. It's important that you base your expectations around this concept (described above).",
 	},
 	// {
 	// 	question: 'What is a Minimum Viable Product (MVP)?',
