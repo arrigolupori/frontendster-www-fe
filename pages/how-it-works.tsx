@@ -8,8 +8,6 @@ import TwoCards from '@/components/body/TwoCards'
 import BottomCTA from '@/components/body/BottomCTA'
 import FAQ from '@/components/body/FAQ'
 import Footer from '@/components/nav/Footer'
-import { benefits } from '@/data/benefits'
-import { samples } from '@/data/samples'
 import { faqs } from '@/data/faqs'
 
 const HowItWorksPage: NextPage = () => {
@@ -31,49 +29,51 @@ const HowItWorksPage: NextPage = () => {
 				/>
 				<section className='px-6 mx-auto sm:max-w-xl sm:px-0'>
 					<Explainer explainerHeading=''>
-						<h2 className='mb-2'>Hiring a developer is a chore...</h2>
+						<h2 className='mb-2'>Get a functional web app in under 8 weeks</h2>
 						<p className='mb-2 sm:text-lg'>
-							You want to modernize your business. And you <em>know</em> it
-							takes a proper web application to do so.
+							Contrary to popular belief, building a modern web application
+							doesn&apos;t <em>have</em> to be complex.
 						</p>
 						<p className='mb-2 sm:text-lg'>
-							But hiring a developer presents a ton of challenges which are hard
-							to solve all at once:
+							Over the years, developer tools have evolved to allow for more
+							streamlined development and lower costs.
 						</p>
-						<ul className='sm:text-lg'>
-							<li className='sm:text-lg'>
-								Developers are <em>expensive</em> because there is a shortage of
-								them—raising the demand.
-							</li>
-							<li className='sm:text-lg'>
-								With a strong technical background, developers often{' '}
-								<em>lack the business skills</em> necessary to understand your
-								needs.
-							</li>
-							<li className='sm:text-lg'>
-								Because of this, you—as the business owner or manager—have a{' '}
-								<em>hard time communicating</em> your overarching goals with
-								developers.
-							</li>
-							<li className='sm:text-lg'>
-								Instead of getting something usable within weeks,{' '}
-								<em>the project ends up lasting months</em> and the delivered
-								product is often unfinished.
-							</li>
-							<li className='sm:text-lg'>
-								There&apos;s <em>lots of back-and-forth</em>, which could be
-								minimized by setting the right expectations.
-							</li>
-						</ul>
 						<p className='mb-2 sm:text-lg'>
-							If this all sounds like the typical experience of hiring a
-							developer to you, Frontendster is here to help.
+							Frontendster leverages these tools to speed up development while
+							delivering a great product.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Here are the <strong>6 steps to your web app</strong>:
+						</p>
+						<ol className='sm:text-lg'>
+							<li className='sm:text-lg'>
+								Start with a <strong>free consultation</strong>
+							</li>
+							<li className='sm:text-lg'>
+								<strong>Get a quote</strong> and full project breakdown
+							</li>
+							<li className='sm:text-lg'>
+								<strong>Visualize your app</strong> with a wireframe and mockup
+							</li>
+							<li className='sm:text-lg'>
+								Approved? The <strong>3 cycles of development</strong> start!
+							</li>
+							<li className='sm:text-lg'>
+								The <strong>app is thoroughly tested</strong> before launch
+							</li>
+							<li className='sm:text-lg'>
+								<strong>Launch the application</strong> and get support
+							</li>
+						</ol>
+						<p className='mb-2 sm:text-lg'>
+							Let&apos;s look at each of the steps in detail to better
+							understand the value of Frontendster.
 						</p>
 					</Explainer>
 				</section>
 				<section className='pt-8 mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='What is Frontendster?'
+						explainerHeading='Step #1: Your free consultation'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
@@ -81,54 +81,67 @@ const HowItWorksPage: NextPage = () => {
 							allows you to get a fully-functional web application in less than
 							8 weeks.
 						</p>
-						<p className='mb-2 sm:text-lg'>
-							The service focuses on achieving a beautiful, functional UI
-							powered by open-source managed backends such as Strapi and
-							Supabase.
-						</p>
-						<p className='mb-2 sm:text-lg'>
-							That way, you not only control the end-user experience, but you
-							also own 100&percnt; of your application!{' '}
-							<mark>No middlemen required.</mark>
-						</p>
 					</Explainer>
-				</section>
-				<section className='px-12'>
-					<ThreeCards data={benefits} />
-				</section>
-				<section className='pt-8 mx-auto sm:max-w-xl'>
+
 					<Explainer
-						explainerHeading='Ok, but what can you build with Frontendster?'
+						explainerHeading='Step #2: Full project breakdown'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Great question! Since Frontendster focuses on{' '}
-							<mark>delivering great end-user experiences</mark>, you can build
-							anything that is meant to augment your brand:
+							Frontendster is a cost-effective web development service that
+							allows you to get a fully-functional web application in less than
+							8 weeks.
 						</p>
 					</Explainer>
-				</section>
-				<section className='px-12'>
-					<TwoCards data={samples} />
-				</section>
-				<section className='py-8 mx-auto sm:max-w-xl'>
-					<Explainer explainerHeading='' background={false}>
+
+					<Explainer
+						explainerHeading='Step #3: Wireframes &amp; mockups'
+						background={false}
+					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Each application is built starting from your specific
-							requirements, and with your end-users&apos; needs in mind.{' '}
-							<mark>They are not templated nor duplicated.</mark>
+							Frontendster is a cost-effective web development service that
+							allows you to get a fully-functional web application in less than
+							8 weeks.
 						</p>
-						<p className='mb-2 sm:text-lg'>
-							To make our (and your) life easier, we use open-source managed
-							backend services that allow us to focus exclusively on achieving a{' '}
-							great UI.
+					</Explainer>
+
+					<Explainer
+						explainerHeading='Step #4: Developing your app'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Frontendster is a cost-effective web development service that
+							allows you to get a fully-functional web application in less than
+							8 weeks.
+						</p>
+					</Explainer>
+
+					<Explainer
+						explainerHeading='Step #5: Final revisions &amp; testing'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Frontendster is a cost-effective web development service that
+							allows you to get a fully-functional web application in less than
+							8 weeks.
+						</p>
+					</Explainer>
+
+					<Explainer
+						explainerHeading='Step #6: Launching your MVP'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Frontendster is a cost-effective web development service that
+							allows you to get a fully-functional web application in less than
+							8 weeks.
 						</p>
 					</Explainer>
 				</section>
 				<section className='px-12'>
 					<BottomCTA
 						mainHeading='Take the first step today'
-						subHeading='...'
+						subHeading='Book a friendly live chat with Arrigo and learn if Frontendster is right for your business. No strings attached, you decide.'
 						ctaText='Get a free 45-min consultation'
 						ctaSlug='/free-consultation'
 					/>

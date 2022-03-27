@@ -28,7 +28,7 @@ const TermsPage: NextPage = () => {
 						IT06953190482) with the sole purpose of helping customers launch a
 						custom web application from scratch. Currently, Frontendster only
 						operates as a web development service; we do not offer marketing,
-						customer support, or other business services.
+						graphic design, or other business services.
 					</p>
 					<h2 className='pt-4'>General terms</h2>
 					<p className='leading-6'>

@@ -28,14 +28,14 @@ const Home: NextPage = () => {
 				<Header
 					mainHeading='Your web app in 8 weeks'
 					subHeading='Frontendster is the all-in-one frontend development service that helps you launch your own web app in less than 8 weeks.'
-					ctaText='Get a free 45-min consultation'
-					ctaSlug='/free-consultation'
+					ctaText='See how it works'
+					ctaSlug='/how-it-works'
 				/>
-				{/* <section className=' -top-12 -mb-20 px-10 max-w-2xl mx-auto text-center relative sm:-top-20 sm:px-4'>
+				<section className=' -top-12 -mb-20 px-10 max-w-2xl mx-auto text-center relative sm:-top-20 sm:px-4'>
 					<CloudinaryContext cloud_name='arrigolupori'>
 						<div className='border-8 border-white rounded-md shadow-md'>
 							<Video
-								publicId='https://res.cloudinary.com/arrigolupori/video/upload/v1648122864/Frontendster_-_Thank_you_bh3pix.mp4'
+								publicId='https://res.cloudinary.com/arrigolupori/video/upload/v1648391639/frontendster_intro_video_cloudinary_scenna.mp4'
 								width='100%'
 								controls
 								autoPlay
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
 							/>
 						</div>
 					</CloudinaryContext>
-				</section> */}
+				</section>
 				<section className='px-6 mx-auto sm:max-w-xl sm:px-0'>
 					<Explainer explainerHeading=''>
 						<h2 className='mb-2'>Hiring a developer can be a major chore...</h2>
@@ -144,9 +144,9 @@ const Home: NextPage = () => {
 				<section className='lg:px-4'>
 					<BottomCTA
 						mainHeading='Learn the 6 steps to your web app'
-						subHeading='Book a friendly live chat with Arrigo and see if the 6-step Frontendster process is right for your business. Zero commitments.'
-						ctaText='Get a free 45-min consultation'
-						ctaSlug='/free-consultation'
+						subHeading='Understand the 6 steps necessary to build your web app and learn if Frontendster is right for your business. Zero commitments.'
+						ctaText='See how it works'
+						ctaSlug='/how-it-works'
 					/>
 				</section>
 				<section>
