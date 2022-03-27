@@ -1,16 +1,16 @@
-import { ArrowsExpandIcon, SparklesIcon } from '@heroicons/react/outline'
+import { DeviceMobileIcon, FastForwardIcon } from '@heroicons/react/outline'
 
 export const devcards = [
 	{
-		name: '1. Wireframe',
+		name: 'Minimum Viable Product (MVP)',
 		description:
-			'A wireframe serves as a low-fidelity representation of your app to showcase user interaction and jobs to be done. It can feature animations and flow diagrams.',
-		icon: ArrowsExpandIcon,
+			'An MVP is the bare minimum required to make a web product viable for business purposes (i.e. basic functionality, payments integrated, full authentication, etc).',
+		icon: DeviceMobileIcon,
 	},
 	{
-		name: '2. Mockup',
+		name: 'Sprint (2-Week Development Span)',
 		description:
-			'A mockup is a full-color, high-fidelity representation of your app. Used primarily to showcase what your web application will look like once launched publicly.',
-		icon: SparklesIcon,
+			'A sprint is a two-week period where development is focused towards implementing a set of functionality, with the goal of releasing a new app version.',
+		icon: FastForwardIcon,
 	},
 ]

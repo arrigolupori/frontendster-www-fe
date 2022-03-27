@@ -181,27 +181,31 @@ const HowItWorksPage: NextPage = () => {
 						explainerHeading='4. Developing your app'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>Step 4...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Finally, we get to the more time-intensive step:{' '}
+							<mark>development</mark>. Frontendster aims to deliver a "Minimum
+							Viable Product" within 8 weeks.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							To achieve this, the development is broken down in multiple
+							"sprints", which are focused timeslots dedicated exclusively to
+							your web app.
+						</p>
 					</Explainer>
 				</section>
 
 				<section className='px-12'>
 					<TwoCards data={devcards} />
 				</section>
-
 				<section className='mx-auto sm:max-w-xl'>
 					<Explainer explainerHeading='' background={false}>
 						<p className='-mt-4 mb-2 sm:text-lg'>
-							Frontendster first goes through the jobs to be done and creates a{' '}
-							<mark>wireframe of your app</mark> against them.
+							Each sprint is designed to maximize productivity and deliver new
+							functionality in just 2 weeks.
 						</p>
 						<p className='mb-2 sm:text-lg'>
-							Once approved, the app is then brought to life with all individual
-							design elements through a mockup.
-						</p>
-						<p className='mb-2 sm:text-lg'>
-							Depending on the size of your app, these will cost between $1,000
-							to $2,000 to produce (combined).
+							Standard sprints cost $3000. They are so effective that your web
+							app might need as little as two of them.
 						</p>
 					</Explainer>
 				</section>
@@ -211,7 +215,18 @@ const HowItWorksPage: NextPage = () => {
 						explainerHeading='5. Final revisions &amp; testing'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>Step 5...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							Before your app is launched, it needs to be{' '}
+							<mark>tested across multiple browsers and devices</mark>.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							This process takes around a week to be completed. It&apos;s also a
+							good time to make small final changes.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Because of the shorter time span, this step is charged at half the
+							cost of a standard sprint ($1,500).
+						</p>
 					</Explainer>
 				</section>
 
@@ -220,22 +235,49 @@ const HowItWorksPage: NextPage = () => {
 						explainerHeading='6. Launching your MVP'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>Step 6...</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>
+							You&apos;ve done it! You&apos;ve officially reached the launch
+							stage after 6 steps and can enjoy your new app.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							At this point, you can decide whether to continue adding features
+							to your app or <mark>get monthly support</mark>.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							If you&apos;re happy with the result and don&apos;t need any
+							additional help, the contract simply ends.
+						</p>
 					</Explainer>
 				</section>
-				<section className='py-8 mx-auto sm:max-w-xl'>
+				<section className='-mt-10 mb-16 px-6 mx-auto sm:max-w-xl sm:px-0'>
+					<Explainer explainerHeading=''>
+						<p className='mb-0 sm:text-lg'>
+							<strong>Note:</strong> Support is offered on a subscription basis
+							starting at $100/mo. You can reach Frontendster at{' '}
+							<a href='mailto:support@frontendster.com'>
+								support@frontendster.com
+							</a>{' '}
+							if you want to learn more about how the support subscriptions
+							work.
+						</p>
+					</Explainer>
+				</section>
+				<section className='pb-10 mx-auto sm:max-w-xl'>
 					<Explainer
 						explainerHeading='Ok, so how much is the web app going to cost you?'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>
-							Good question. Frontendster doesn&apos;t try to hide any fees.
+						<p className='-mt-10 mb-2 sm:text-lg'>Good question.</p>
+						<p className='mb-2 sm:text-lg'>
+							Frontendster doesn&apos;t try to hide any fees.
+						</p>
+						<p className='mb-2 sm:text-lg'>
 							Depending on how many sprints your app&apos;s development will
 							require, the cost can vary from a minimum of $9,000 to a maximum
 							of $21,000.
 						</p>
 						<p className='mb-2 sm:text-lg'>
-							In 75%+ of cases, the cost of your MVP will average out at{' '}
+							In 80%+ of cases, the cost of your MVP will average out at{' '}
 							<mark>around $12,000 to $15,000</mark>.
 						</p>
 						<p className='mb-2 sm:text-lg'>
