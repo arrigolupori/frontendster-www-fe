@@ -183,12 +183,12 @@ const HowItWorksPage: NextPage = () => {
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
 							Finally, we get to the more time-intensive step:{' '}
-							<mark>development</mark>. Frontendster aims to deliver a "Minimum
-							Viable Product" within 8 weeks.
+							<mark>development</mark>. Frontendster aims to deliver a &ldquo;Minimum
+							Viable Product&rdquo; within 8 weeks.
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							To achieve this, the development is broken down in multiple
-							"sprints", which are focused timeslots dedicated exclusively to
+							&ldquo;sprints&rdquo;, which are focused timeslots dedicated exclusively to
 							your web app.
 						</p>
 					</Explainer>
