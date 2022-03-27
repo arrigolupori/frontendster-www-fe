@@ -28,10 +28,7 @@ const ConsultationPage: NextPage = () => {
 						</p>
 					</section>
 					<section className='-mt-24 sm:-mt-16'>
-						<Script
-							src='https://static.airtable.com/js/embed/embed_snippet_v1.js'
-							strategy='beforeInteractive'
-						/>
+						<Script src='https://static.airtable.com/js/embed/embed_snippet_v1.js' />
 						<iframe
 							className='z-0 airtable-embed airtable-dynamic-height'
 							src='https://airtable.com/embed/shrw5zdLHSMonhxu1?backgroundColor=cyan'

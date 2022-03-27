@@ -136,8 +136,8 @@ const Home: NextPage = () => {
 						</p>
 						<p className='mb-2 sm:text-lg'>
 							By using managed backends, Frontendster can focus exclusively on
-							delivering a great interface in a fraction of the development
-							time.
+							delivering a great interface in a fraction of the development time
+							(and cost).
 						</p>
 					</Explainer>
 				</section>

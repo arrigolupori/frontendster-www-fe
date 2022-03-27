@@ -9,6 +9,8 @@ import BottomCTA from '@/components/body/BottomCTA'
 import FAQ from '@/components/body/FAQ'
 import Footer from '@/components/nav/Footer'
 import { faqs } from '@/data/faqs'
+import { topics } from '@/data/topics'
+import { sections } from '@/data/sections'
 
 const HowItWorksPage: NextPage = () => {
 	return (
@@ -73,68 +75,123 @@ const HowItWorksPage: NextPage = () => {
 				</section>
 				<section className='pt-8 mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='Step #1: Your free consultation'
+						explainerHeading='1. Your free consultation'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
+							Every web development project has its own set of requirements, and
+							yours will likely be no different.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							That&apos;s why Frontendster offers a{' '}
+							<mark>free consultation</mark> for you to get started without
+							taking a full plunge.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							During our 45-minute session, we&apos;ll go through 4 major areas
+							relevant to building a great web app:
 						</p>
 					</Explainer>
+				</section>
+				<section className='px-12'>
+					<TwoCards data={topics} />
+				</section>
 
-					<Explainer
-						explainerHeading='Step #2: Full project breakdown'
-						background={false}
-					>
-						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
+				<section className='-mt-4 mx-auto sm:max-w-xl'>
+					<Explainer explainerHeading='' background={false}>
+						<p className='mb-2 sm:text-lg'>
+							Going through these 4 areas, Frontendster will be able to generate
+							a full project breakdown for you, so that you can consider whether
+							to invest or not.
 						</p>
 					</Explainer>
-
+				</section>
+				<section className='mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='Step #3: Wireframes &amp; mockups'
+						explainerHeading='2. Full project breakdown'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
+							If you choose to move ahead to step 2, Frontendster will charge
+							you $250 for a <mark>full project breakdown</mark>.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							This is a 6-part document which includes all the information you
+							need to make an informed decision:
 						</p>
 					</Explainer>
-
-					<Explainer
-						explainerHeading='Step #4: Developing your app'
-						background={false}
-					>
-						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
+				</section>
+				<section className='px-12'>
+					<ThreeCards data={sections} />
+				</section>
+				<section className='-mt-4 mx-auto sm:max-w-xl'>
+					<Explainer explainerHeading='' background={false}>
+						<p className='mb-2 sm:text-lg'>
+							With the project breakdown in hand, you can choose whether or not
+							Frontendster is right for you.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							If you choose to move ahead, you will be sent a contract with the
+							agreed terms to sign.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							<mark>You won&apos;t have to pay the entire app upfront</mark>.
+							Each step is individually billed to reduce your risk.
 						</p>
 					</Explainer>
-
+				</section>
+				<section className='mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='Step #5: Final revisions &amp; testing'
+						explainerHeading='3. Wireframes &amp; mockups'
 						background={false}
 					>
-						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
-						</p>
+						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
 					</Explainer>
+				</section>
 
+				<section className='pt-8 mx-auto sm:max-w-xl'>
 					<Explainer
-						explainerHeading='Step #6: Launching your MVP'
+						explainerHeading='4. Developing your app'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+					</Explainer>
+				</section>
+				<section className='pt-8 mx-auto sm:max-w-xl'>
+					<Explainer
+						explainerHeading='5. Final revisions &amp; testing'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+					</Explainer>
+				</section>
+
+				<section className='pt-8 mx-auto sm:max-w-xl'>
+					<Explainer
+						explainerHeading='6. Launching your MVP'
+						background={false}
+					>
+						<p className='-mt-10 mb-2 sm:text-lg'>...</p>
+					</Explainer>
+				</section>
+				<section className='py-8 mx-auto sm:max-w-xl'>
+					<Explainer
+						explainerHeading='Ok, so how much is the web app going to cost you?'
 						background={false}
 					>
 						<p className='-mt-10 mb-2 sm:text-lg'>
-							Frontendster is a cost-effective web development service that
-							allows you to get a fully-functional web application in less than
-							8 weeks.
+							Good question. Frontendster doesn&apos;t try to hide any fees.
+							Depending on how many sprints your app&apos;s development will
+							require, the cost can vary from a minimum of $9,000 to a maximum
+							of $21,000.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							In 75%+ of cases, the cost of your MVP will average out at{' '}
+							<mark>around $12,000 to $15,000</mark>.
+						</p>
+						<p className='mb-2 sm:text-lg'>
+							Each cost will be clarified in detail during the project breakdown
+							step. There will be no surprise fees.
 						</p>
 					</Explainer>
 				</section>
