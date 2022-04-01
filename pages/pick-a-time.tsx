@@ -12,7 +12,7 @@ const TimePage: NextPage = () => {
 				title='Pick a Time for Your Consultation with Frontendster'
 				description='Thank you for your interest in Frontendster. Pick a time with Arrigo to discuss your web application and see if Frontendster is the right fit.'
 				route='https://www.frontendster.com/pick-a-time'
-				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
+				thumbnailUrl={`https://www.frontendster.com/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>

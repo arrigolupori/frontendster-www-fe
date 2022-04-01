@@ -12,7 +12,7 @@ const ConsultationPage: NextPage = () => {
 				title='Get a Free 45-Min Consultation with Frontendster'
 				description="You're one step away from booking your 45-minute consultation with Frontendster. Fill out this short form and get your own web app built!"
 				route='https://www.frontendster.com/consultation'
-				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
+				thumbnailUrl={`https://www.frontendster.com/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>

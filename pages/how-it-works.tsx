@@ -21,7 +21,7 @@ const HowItWorksPage: NextPage = () => {
 				title='How Frontendster Works: 6 Simple Steps'
 				description='Frontendster works based on 6 simple steps: consultation, technical discovery, wireframing, development, testing, and post-MVP support.'
 				route='https://www.frontendster.com/how-it-works'
-				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
+				thumbnailUrl={`https://www.frontendster.com/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>

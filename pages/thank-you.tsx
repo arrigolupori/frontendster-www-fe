@@ -16,7 +16,7 @@ const ThanksPage: NextPage = () => {
 				title='Thank You!'
 				description="You have successfully booked a 45-minute consultation with Frontendster. Exciting times! Here's a quick message from Arrigo..."
 				route='https://www.frontendster.com/thank-you'
-				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
+				thumbnailUrl={`https://www.frontendster.com/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>

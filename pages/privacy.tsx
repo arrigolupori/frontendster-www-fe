@@ -12,7 +12,7 @@ const PrivacyPage: NextPage = () => {
 				title='Privacy Policy from Frontendster'
 				description="These is Frontendster's privacy policy. Please read them carefully to understand what data we collect from you as part of our service."
 				route='https://www.frontendster.com/privacy'
-				thumbnailUrl={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/preview.jpg`}
+				thumbnailUrl={`https://www.frontendster.com/preview.jpg`}
 				thumbnailAlt='frontendster your web application less than 8 weeks'
 			/>
 			<Container>
