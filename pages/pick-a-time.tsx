@@ -32,7 +32,7 @@ const TimePage: NextPage = () => {
 						</p>
 					</section>
 					<section className='-mt-6 mb-12'>
-						<InlineWidget url='https://calendly.com/frontendster/45-min-consultation?text_color=061009&primary_color=3aa25e' />
+						<InlineWidget url='https://calendly.com/arrigo-lupori/45-min-consultation?text_color=061009&primary_color=3aa25e' />
 					</section>
 				</article>
 				<Footer />
