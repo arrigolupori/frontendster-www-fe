@@ -49,14 +49,12 @@ export default function Header(props: HeaderInfo) {
 							</div>
 							<div className='hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
 								<span className='inline-flex rounded-md shadow'>
-									<a
-										href='https://app.frontendster.com/signin'
-										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'
-										target='_blank'
-										rel='noreferrer'
-									>
-										Customer login
-									</a>
+									<Link href='/free-consultation'>
+										<a className='inline-flex items-center px-4 py-2 border border-transparent text-base font-bold rounded-md text-main bg-white hover:bg-gray-50'>
+											{/* Customer login */}
+											Free 45-min consultation
+										</a>
+									</Link>
 								</span>
 							</div>
 						</nav>
@@ -100,14 +98,12 @@ export default function Header(props: HeaderInfo) {
 										</a>
 									))}
 								</div>
-								<a
-									href='https://app.frontendster.com/signin'
-									className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Customer login
-								</a>
+								<Link href='/free-consultation'>
+									<a className='block w-full px-5 py-3 text-center font-bold text-main bg-gray-50 hover:bg-gray-100'>
+										{/* Customer login */}
+										Free 45-min consultation
+									</a>
+								</Link>
 							</div>
 						</Popover.Panel>
 					</Transition>
